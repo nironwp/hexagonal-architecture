@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "1ba66f4b-f415-4f3f-ad0b-a86a75418675",
+		"name": "Go api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22995874",
+		"_collection_link": "https://grey-comet-57172.postman.co/workspace/pedro~3073eefe-cb4d-4472-addc-a9b51c04d6e0/collection/22995874-1ba66f4b-f415-4f3f-ad0b-a86a75418675?action=share&creator=22995874&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/product/b044b490-f948-4330-8eaf-dad93ea56483",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"product",
+						"b044b490-f948-4330-8eaf-dad93ea56483"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID\": \"b044b490-f948-4330-8eaf-dad93ea56483\",\r\n    \"Name\": \"Candy\",\r\n    \"Status\": \"enabled\",\r\n    \"Price\": 1,\r\n    \"Quantity\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enable Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/product/b044b490-f948-4330-8eaf-dad93ea56483/enable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"product",
+						"b044b490-f948-4330-8eaf-dad93ea56483",
+						"enable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Disable Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/product/b044b490-f948-4330-8eaf-dad93ea56483/disable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"product",
+						"b044b490-f948-4330-8eaf-dad93ea56483",
+						"disable"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
